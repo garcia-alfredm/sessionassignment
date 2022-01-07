@@ -2,6 +2,7 @@ package poms;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.v85.log.Log;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,6 +13,8 @@ import java.time.Duration;
 public class InventoryPOM {
     WebDriver driver;
     WebDriverWait wait;
+
+    LoginPOM loginPOM;
 
     @FindBy(id = "add-to-cart-sauce-labs-backpack")
     WebElement backpackBtn;
